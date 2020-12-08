@@ -35,7 +35,7 @@ while (any(is.na(df)==TRUE)) {                                              # if
           ifelse(df$azimuth >90 & df$azimuth<180, df$ref_y-df$a,
           ifelse (df$azimuth >180 & df$azimuth<270, df$ref_y-df$a,
           ifelse(df$azimuth >270 & df$azimuth<360, df$ref_y+df$a,
-          ifelse (df$azimuth ==0|df$azimuth==360, df$ref_y+distance,
+          ifelse (df$azimuth ==0|df$azimuth==360, df$ref_y+df$distance,
           ifelse (df$azimuth ==90|df$azimuth==270, df$ref_y, df$ref_y-df$distance))))))
   
   
